@@ -26,9 +26,14 @@ Academy uses Vimeo as its hosting services. You can use the following code to
 embed the video into your page:
 
 ```html
-<iframe src="https://player.vimeo.com/video/380193367" width="480"
-  height="280" frameborder="0" allow="autoplay; fullscreen"
-  allowfullscreen></iframe>
+<iframe
+  src="https://player.vimeo.com/video/380193367"
+  width="480"
+  height="280"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+></iframe>
 ```
 
 Each of these _things_ is supposedly a news article. HTML has an `article`

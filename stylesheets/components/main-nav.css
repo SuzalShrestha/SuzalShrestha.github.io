@@ -5,6 +5,8 @@ nav.main>.main__nav {
     align-items: center;
     font-size: 14px;
     margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
 }
 
 .main__nav__text {

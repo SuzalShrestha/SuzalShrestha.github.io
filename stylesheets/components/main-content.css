@@ -1,1 +1,96 @@
-/* Your code here */
+.main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.main__grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-areas: "header header" "amain video " "aleft aright";
+}
+
+.main__grid__header {
+    grid-area: header;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.article__main {
+    grid-area: amain;
+}
+
+.main__grid__video {
+    grid-area: video;
+}
+
+.article__left {
+    grid-area: aleft;
+}
+
+.article__right {
+    grid-area: aright;
+}
+
+.article__subheader {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: start;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.article__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    margin: 20px 0;
+}
+
+article header {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+.article__byline {
+    color: grey;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 0;
+}
+
+.article__author {
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+ul.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 25px;
+    margin: 30px 0;
+}
+
+ul.list li {
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
