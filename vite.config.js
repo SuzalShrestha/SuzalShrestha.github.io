@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import ViteGHPages from "vite-plugin-gh-pages";
 
 export default defineConfig({
-  //github page deployment
-  base: "/adoptme",
-  plugins: [react()],
-  root: "src",
+  plugins: [react(), ViteGHPages],
+  base: "/",
+  build: {
+    outDir: "dist",
+  },
 });
